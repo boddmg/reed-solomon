@@ -1,0 +1,4 @@
+[package]
+name = "reed-solomon-rs"
+version = "0.0.1"
+authors = ["boddmg <boddmg@gmail.com>"]
