@@ -1,8 +1,5 @@
 mod galois_field_int;
-use std::ops::Mul;
-use std::ops::Add;
-use std::ops::Div;
-use std::ops::Sub;
+use std::ops;
 
 pub struct Polynomial {
     data: Vec<u8>,
@@ -14,7 +11,7 @@ impl Polynomial {
     }
 }
 
-impl Add for Polynomial {
+impl ops::Add for Polynomial {
     type Output = Polynomial;
 
     fn add(self, other: Polynomial) ->Polynomial {
